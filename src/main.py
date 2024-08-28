@@ -49,10 +49,9 @@ def Game_main():
                 if game_manager.check_click(mouse_pos,game_manager.botton_play_again):
                     pygame.quit()
                 elif game_manager.check_click(mouse_pos,game_manager.botton_quit):
-                    Game_main()
                     sound_end.stop()
                     sound_win.stop()
-
+                    Game_main()
 
         screen.fill("black")
 
